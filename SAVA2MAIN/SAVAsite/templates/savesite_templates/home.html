@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+<div style="border: 1px solid black;">
+    <h1>This is the body</h1>
+    <p>Body section of the website</p>
+
+</div>
+{{ some_string }}<br>
+{{ some_number }}<br>
+
+
+
+{% for question in questions %}
+{% include 'savesite_templates/snippets/body_snippets.html' with big_list=question %}
+{% endfor %}
+    
+
+
+{% endblock content %}
+
+
+{% block cheese %}
+
+<p>This is the cheese block</p>
+    
+{% endblock cheese %}
+    
