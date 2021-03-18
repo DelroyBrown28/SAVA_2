@@ -1,0 +1,98 @@
+body,
+html {
+    background-color: #F9F3F2;
+    padding: 10px 60px;
+    font-family: 'Inter', sans-serif;
+
+}
+
+/* 
+==============
+LITTLE HELPERS
+==============
+*/
+
+.flexed {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.redborder {
+    border: 1px solid red;
+}
+
+.blueborder {
+    border: 1px solid blue;
+}
+
+
+/* 
+=========
+HOME PAGE
+=========
+*/
+
+nav {
+    position: relative;
+    background: #F9F3F2;
+    box-shadow: none;
+}
+
+#nav-mobile>li>a {
+    color: #333;
+}
+
+.top-homepage-contents {
+    height: 90vh;
+}
+
+.main-logo-wrap,
+.main-blurb-wrap {
+    height: 100%;
+    flex-flow: column;
+}
+
+.main-blurb-wrap {
+    /* padding: 0px 100px !important; */
+}
+
+.top-homepage-blurb, .subheading {
+    font-family: 'Yeseva One', cursive;
+}
+
+.top-homepage-blurb {
+    line-height: 90.5%;
+    font-size: 57px;
+}
+
+.subheading {
+    text-align: left;
+    line-height: 105% !important;
+    width: 100%;
+    font-size: 25px;
+    opacity: 0.6;
+}
+
+.top-homepage-btn-wrap {
+    width: 100%;
+}
+
+.top-homepage-btns {
+    height: 50px;
+    width: 210px;
+    font-family: 'Yeseva One', cursive;  
+    border: none;
+    font-size: 20px;
+}
+
+.get-started-btn {
+    background-color: #333;
+    color: #f7f7f7;
+}
+
+.learn-more-btn {
+    background-color: #F9F3F2;
+    border: 1px solid #333;
+    margin-left: 25px;
+}

@@ -1,30 +1,31 @@
 {% extends 'base.html' %}
-
+{% load static %}
 
 
 {% block content %}
-<div style="border: 1px solid black;">
-    <h1>This is the body</h1>
-    <p>Body section of the website</p>
-
-</div>
-{{ some_string }}<br>
-{{ some_number }}<br>
+{% include 'savesite_templates/snippets/navbar.html' %}
 
 
+<section class="row top-homepage-contents redborder">
+    <div class="col s6 flexed main-logo-wrap">
+        <img src="{% static 'images/mainlogo.png' %}" alt="Main Logo">
+    </div>
 
-{% for question in questions %}
-{% include 'savesite_templates/snippets/body_snippets.html' with big_list=question %}
-{% endfor %}
-    
+    <div class="col s6 flexed main-blurb-wrap">
+        <div class="heading-subheading-wrap">
+            <h3 class="top-homepage-blurb">Finally!<br>
+                a better, faster and more<br>
+                personal Virtual Assistant.
 
+            </h3>
+            <p class="subheading mt-3">Check out our services<br>
+                and what we offer.</p>
 
+            <div class="top-homepage-btn-wrap">
+                <button class="top-homepage-btns get-started-btn">Get Started!</button>
+                <button class="top-homepage-btns learn-more-btn">Learn More</button>
+            </div>
+        </div>
+    </div>
+</section>
 {% endblock content %}
-
-
-{% block cheese %}
-
-<p>This is the cheese block</p>
-    
-{% endblock cheese %}
-    
