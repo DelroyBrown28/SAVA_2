@@ -1,9 +1,17 @@
 body,
 html {
     background-color: #F9F3F2;
-    padding: 10px 60px;
+    /* padding: 0px 20px; */
     font-family: 'Inter', sans-serif;
 
+}
+
+.navbar-fixed {
+    padding: 0 !important;
+}
+
+::-webkit-scrollbar {
+    visibility: hidden;
 }
 
 /* 
@@ -34,9 +42,11 @@ HOME PAGE
 */
 
 nav {
-    position: relative;
     background: #F9F3F2;
     box-shadow: none;
+    width: 100%;
+
+
 }
 
 #nav-mobile>li>a {
@@ -45,6 +55,7 @@ nav {
 
 .top-homepage-contents {
     height: 90vh;
+    padding: 0px 50px;
 }
 
 .main-logo-wrap,
@@ -57,13 +68,14 @@ nav {
     /* padding: 0px 100px !important; */
 }
 
-.top-homepage-blurb, .subheading {
+.top-homepage-blurb,
+.subheading {
     font-family: 'Yeseva One', cursive;
 }
 
 .top-homepage-blurb {
     line-height: 90.5%;
-    font-size: 57px;
+    font-size: 64px;
 }
 
 .subheading {
@@ -81,7 +93,7 @@ nav {
 .top-homepage-btns {
     height: 50px;
     width: 210px;
-    font-family: 'Yeseva One', cursive;  
+    font-family: 'Yeseva One', cursive;
     border: none;
     font-size: 20px;
 }
@@ -95,4 +107,79 @@ nav {
     background-color: #F9F3F2;
     border: 1px solid #333;
     margin-left: 25px;
+}
+
+
+/* 
+=================
+SERVICES CONTENTS
+=================
+*/
+
+.services-contents {
+    height: 90vh;
+    padding: 0;
+}
+
+.services-title-bar {
+    height: 150px;
+    width: 75%;
+    background-color: #333;
+}
+
+.title-section,
+.title-section-blurb-wrap {
+    height: 100%;
+}
+
+.services-title {
+    font-size: 3rem;
+    color: #f7f7f7;
+    font-family: 'Yeseva One', cursive;
+    
+}
+
+.title-section-blurb {
+    /* font-family: 'Yeseva One', cursive; */
+    color: #f7f7f7;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.collapsible {
+    box-shadow: none;
+    border: none;
+}
+
+.collapsible-header {
+    border: none;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 300;
+    background-color: #F9F3F2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+================
+HOVERS & SUCH...
+================
+*/
+
+.link-hover:hover {
+    background-color: transparent !important;
+    opacity: 0.5;
+    transition: 0.3s;
 }
