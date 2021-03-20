@@ -19,10 +19,10 @@
             </h3>
             <p class="subheading mt-3 remove-me">Check out our services<br>
                 and what we offer.</p>
-
             <div class="top-homepage-btn-wrap">
                 <button class="top-homepage-btns services-btn btn-to-services remove-me">Services</button>
-                <button class="top-homepage-btns learn-more-btn remove-me">Contact</button>
+                
+                <a href="{% url 'contact' %}"><button class="top-homepage-btns learn-more-btn remove-me">Contact</button></a>
             </div>
         </div>
     </div>
@@ -45,7 +45,7 @@
                     {% include 'savesite_templates/snippets/body_snippets.html' with big_list=question %}
                     {% endfor %}
                 </p>
-                <button class="mt-1 collapsible-body-btn">Contact us</button>
+                <a href="{% url 'contact' %}" class="mt-1 collapsible-body-btn">Contact us</a>
 
             </div>
             <div class="service-headers-wrap flexed">
