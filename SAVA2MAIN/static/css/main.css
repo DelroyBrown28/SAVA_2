@@ -1,7 +1,8 @@
 body,
 html {
     background-color: #F9F3F2;
-    /* padding: 0px 20px; */
+    padding-left: 20px;
+    padding-right: 20px;
     font-family: 'Inter', sans-serif;
 
 }
@@ -54,8 +55,11 @@ nav {
 }
 
 .top-homepage-contents {
+    position: relative;
     height: 90vh;
-    padding: 0px 50px;
+    width: 100%;
+    z-index: 200;
+
 }
 
 .main-logo-wrap,
@@ -88,6 +92,8 @@ nav {
 
 .top-homepage-btn-wrap {
     width: 100%;
+    z-index: 200;
+
 }
 
 .top-homepage-btns {
@@ -96,9 +102,10 @@ nav {
     font-family: 'Yeseva One', cursive;
     border: none;
     font-size: 20px;
+
 }
 
-.get-started-btn {
+.services-btn {
     background-color: #333;
     color: #f7f7f7;
 }
@@ -116,50 +123,80 @@ SERVICES CONTENTS
 =================
 */
 
-.services-contents {
+
+.services-section {
+    position: absolute;
     height: 90vh;
-    padding: 0;
-}
-
-.services-title-bar {
-    height: 150px;
-    width: 75%;
-    background-color: #333;
-}
-
-.title-section,
-.title-section-blurb-wrap {
-    height: 100%;
-}
-
-.services-title {
-    font-size: 3rem;
-    color: #f7f7f7;
-    font-family: 'Yeseva One', cursive;
-    
-}
-
-.title-section-blurb {
-    /* font-family: 'Yeseva One', cursive; */
-    color: #f7f7f7;
-    font-size: 20px;
-    font-weight: 300;
-}
-
-.collapsible {
-    box-shadow: none;
-    border: none;
-}
-
-.collapsible-header {
-    border: none;
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 300;
+    padding-left: 50px;
+    padding-right: 50px;
     background-color: #F9F3F2;
+    flex-flow: column;
+
+    visibility: hidden;
+
+}
+
+.services-top {
+    width: 100%;
+    height: 15%;
+}
+
+.services-section-title {
+    margin: 0;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.services-list-wrap {
+    height: 70%;
+    width: 100%;
+}
+
+.service-headers-wrap {
+    flex-flow: column;
+    font-size: 1.3rem;
+    margin: 0px 50px;
+
+}
+
+.content-management-list {
+    text-align: center;
+
+}
+
+.services-footer {
+    height: 15%;
+    width: 100%;
 }
 
 
+.close-btn {
+
+    font-size: 2rem;
+    color: #333;
+    margin-top: 20px;
+    cursor: pointer;
+
+}
+
+
+.content_management_list {
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 300;
+}
+
+.collapsible-body-btn {
+    height: 50px;
+    width: 210px;
+    font-family: 'Yeseva One', cursive;
+    border: none;
+    font-size: 20px;
+    background-color: #333;
+    color: #f7f7f7;
+
+
+}
 
 
 
@@ -181,5 +218,20 @@ HOVERS & SUCH...
 .link-hover:hover {
     background-color: transparent !important;
     opacity: 0.5;
+    transition: 0.3s;
+}
+
+.services-btn:hover {
+    background-color: #000;
+    transition: 0.3s ease;
+}
+
+.services-btn:active {
+    background-color: #000;
+    transition: 0.3s;
+}
+
+.services-btn:focus {
+    background-color: #000;
     transition: 0.3s;
 }

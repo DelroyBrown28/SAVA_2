@@ -9,3 +9,13 @@ def home_page(request):
     context['questions'] = questions
 
     return render(request, 'savesite_templates/home.html', context)
+
+
+def ContentManagementServiceView(request):
+    context = {}
+    content_management_list = ContentManagementService.Objects.all()
+    context['content_management_list'] = content_management_list
+
+    return render(request,
+                  'savesite_templates/home.html',
+                  context)
