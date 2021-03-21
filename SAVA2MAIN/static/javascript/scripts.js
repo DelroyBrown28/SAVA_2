@@ -10,7 +10,6 @@ const tl = new TimelineLite({
     reversed: true
 });
 
-// Cover will animate first...
 tl.to('.remove-me', 0.3, {
         autoAlpha: 0,
         stagger: 0.1,

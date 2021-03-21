@@ -30,7 +30,7 @@ class ContactView(generic.FormView):
         message = form.cleaned_data.get('message')
 
         send_mail(
-            name + " needs assisting.",
+            "NEW CLIENT: " + name,
             "CLIENTS NAME:" + "\n" + name + "\n \n" + "CONTACT NUMBER: " + "\n" +
             contact + "\n \n" + "CLIENTS EMAIL:" + "\n" + email + "\n \n" + "CLIENTS MESSAGE: " +
             "\n" + message,
@@ -40,3 +40,7 @@ class ContactView(generic.FormView):
         messages.info(
             self.request, "Thanks for getting in touch, we'll get back to you ASAP!")
         return super(ContactView, self).form_valid(form)
+
+
+def WhatWeDoPage(request):
+    return render(request, 'savesite_templates/what_we_do.html')
