@@ -211,12 +211,22 @@ CONTACT PAGE
 
 form label {
     font-size: 1.2rem;
+
+    display: none;
+}
+
+#id_contact {
+    margin: 30px 0px;
 }
 
 textarea::placeholder {
     font-size: 1.3rem;
     color: #333;
 
+}
+
+::-webkit-input-placeholder {
+    color: #333;
 }
 
 .messages {
@@ -236,11 +246,12 @@ textarea::placeholder {
 
 }
 
-#id_email {
-    /* margin: 15px 0px; */
+#id_name {
+    /* font-weight: 700; */
 }
 
 #id_message {
+    margin-top: 20px;
     padding: 10px;
     font-size: 1.5rem;
     height: 250px;

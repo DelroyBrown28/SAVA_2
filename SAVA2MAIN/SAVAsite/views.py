@@ -30,8 +30,8 @@ class ContactView(generic.FormView):
         message = form.cleaned_data.get('message')
 
         send_mail(
-            name,
-            "MESSAGE RECEIVED FROM:" + "\n" + name + "\n \n" + "CONTACT NUMBER: " + "\n" +
+            name + " needs assisting.",
+            "CLIENTS NAME:" + "\n" + name + "\n \n" + "CONTACT NUMBER: " + "\n" +
             contact + "\n \n" + "CLIENTS EMAIL:" + "\n" + email + "\n \n" + "CLIENTS MESSAGE: " +
             "\n" + message,
             email,
