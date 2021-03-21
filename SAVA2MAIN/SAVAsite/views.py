@@ -31,7 +31,9 @@ class ContactView(generic.FormView):
 
         send_mail(
             name,
-            message,
+            "MESSAGE RECEIVED FROM: " + "\n" + name + "\n \n" + "CONTACT NUMBER: " + "\n" +
+            contact + "\n \n" + "CLIENTS MESSAGE: " +
+            "\n" + message,
             email,
             ['savirtual2021@gmail.com'],
         )

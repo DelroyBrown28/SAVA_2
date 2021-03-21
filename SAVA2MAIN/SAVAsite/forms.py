@@ -7,10 +7,14 @@ class ContactForm(forms.Form):
         'placeholder': "Your Full Name. . ."
     }))
     
+    
+    contact = forms.CharField(widget=forms.TextInput(attrs={
+        'placeholder': "Your contact number. . ."
+    }))
     email = forms.EmailField(widget=forms.TextInput(attrs={
         'placeholder': "Your Email Address. . ."
     }))
 
     message = forms.CharField(widget=forms.Textarea(attrs={
-        'placeholder': "Send us a message with your email/contact number and we'll get back to you ASAP. . ."
+        'placeholder': "Please leave a message with your name and contact number..."
     }))
